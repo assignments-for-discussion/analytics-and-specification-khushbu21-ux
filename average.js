@@ -1,10 +1,5 @@
-
 function average(numbers) {
-  var i = 0, sum = 0, len = numbers.length;
-  while(i < len) {
-    sum = sum + numbers[i++];
-  }
-  return sum / len;
+  return numbers.reduce((p, c)=> p + c) / numbers.length;
 }
 
 module.exports = {average};
